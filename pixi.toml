@@ -9,3 +9,5 @@ platforms = ["linux-64"]
 [tasks]
 
 [dependencies]
+scipy = ">=1.14.0,<2"
+matplotlib = ">=3.9.1,<4"
