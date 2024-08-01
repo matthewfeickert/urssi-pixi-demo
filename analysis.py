@@ -10,7 +10,7 @@ plots_dir = Path().cwd() / "plots"
 plots_dir.mkdir(exist_ok=True)
 
 # Madicken's favorite :P
-with plt.rc_context(rc={"image.cmap": "jet"}):
+with plt.rc_context(rc={"image.cmap": "plasma"}):
     fig, ax = plt.subplots()
 
     _cmap = plt.get_cmap()
