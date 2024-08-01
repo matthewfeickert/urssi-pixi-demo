@@ -123,6 +123,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/qhull-2020.2-h434a139_5.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/qt-main-5.15.8-h320f8da_24.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8228510_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/ruff-0.5.5-py312hbe4c86d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/scipy-1.14.0-py312hc2bc53b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/sip-6.7.12-py312h30efb56_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0.tar.bz2
@@ -203,6 +204,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/python_abi-3.12-4_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/qhull-2020.2-h3c5361c_5.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/readline-8.2-h9e318b2_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-64/ruff-0.5.5-py312h8b25c6c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/scipy-1.14.0-py312hb9702fa_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-64/tk-8.6.13-h1abcd95_1.conda
@@ -262,6 +264,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/python_abi-3.12-4_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/qhull-2020.2-h420ef59_5.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.2-h92ec313_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ruff-0.5.5-py312h3402d49_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/scipy-1.14.0-py312h14ffa8f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/tk-8.6.13-h5083fa2_1.conda
@@ -343,6 +346,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/python_abi-3.12-4_cp312.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/qhull-2020.2-hc790b64_5.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/qt-main-5.15.8-h06adc49_23.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/ruff-0.5.5-py312h7a6832a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/scipy-1.14.0-py312h1f4e10d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/sip-6.7.12-py312h53d5487_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0.tar.bz2
@@ -4999,6 +5003,83 @@ packages:
   license_family: GPL
   size: 255870
   timestamp: 1679532707590
+- kind: conda
+  name: ruff
+  version: 0.5.5
+  build: py312h3402d49_0
+  subdir: osx-arm64
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/ruff-0.5.5-py312h3402d49_0.conda
+  sha256: b1ce7f9217431a4a1a4d02879a5fe625f9e6786e96ff011e0cad229139104513
+  md5: 5a73f12a12da7da20f7da74f119860ad
+  depends:
+  - __osx >=11.0
+  - libcxx >=16
+  - python >=3.12,<3.13.0a0
+  - python >=3.12,<3.13.0a0 *_cpython
+  - python_abi 3.12.* *_cp312
+  constrains:
+  - __osx >=11.0
+  license: MIT
+  license_family: MIT
+  size: 5825101
+  timestamp: 1721941488088
+- kind: conda
+  name: ruff
+  version: 0.5.5
+  build: py312h7a6832a_0
+  subdir: win-64
+  url: https://conda.anaconda.org/conda-forge/win-64/ruff-0.5.5-py312h7a6832a_0.conda
+  sha256: f0f07700e1ac2588bf8dd90377878421e30ae6cc9e5e3602af0dc351b1a80981
+  md5: f9d21caeb16335d30d992d31101611e5
+  depends:
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  - ucrt >=10.0.20348.0
+  - vc >=14.2,<15
+  - vc14_runtime >=14.29.30139
+  license: MIT
+  license_family: MIT
+  size: 6279354
+  timestamp: 1721942505595
+- kind: conda
+  name: ruff
+  version: 0.5.5
+  build: py312h8b25c6c_0
+  subdir: osx-64
+  url: https://conda.anaconda.org/conda-forge/osx-64/ruff-0.5.5-py312h8b25c6c_0.conda
+  sha256: 5b384677468db34167fb65d62aa4df55a34b155bd1a65fff5a9c67eece9aa183
+  md5: da1c62f4b2cab719e1a4896ac83e89e4
+  depends:
+  - __osx >=10.13
+  - libcxx >=16
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  constrains:
+  - __osx >=10.13
+  license: MIT
+  license_family: MIT
+  size: 6101187
+  timestamp: 1721941239611
+- kind: conda
+  name: ruff
+  version: 0.5.5
+  build: py312hbe4c86d_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/ruff-0.5.5-py312hbe4c86d_0.conda
+  sha256: 42fc5709259019be29e73396e716a7f7f95b845ec7ab1a65c2073253c4c1f33f
+  md5: 124f7136b731d79ccff000e5cbd6a3bc
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc-ng >=12
+  - libstdcxx-ng >=12
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  constrains:
+  - __glibc >=2.17
+  license: MIT
+  license_family: MIT
+  size: 7164876
+  timestamp: 1721941081428
 - kind: conda
   name: scipy
   version: 1.14.0
