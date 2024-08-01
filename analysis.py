@@ -12,8 +12,11 @@ plots_dir.mkdir(exist_ok=True)
 # Madicken's favorite :P
 with plt.rc_context({"image.cmap": "jet"}):
     fig, ax = plt.subplots()
-    ax.plot(x, y)
+    ax.plot(x, y, label=r"$\cos(x)$")
+    ax.plot(x + 1, 2 * y, label=r"$2\cos(x+1)$")
     ax.set_xlabel("x")
     ax.set_ylabel("y")
+
+    ax.legend(frameon=False)
 
     fig.savefig(plots_dir / "cosine.png")
