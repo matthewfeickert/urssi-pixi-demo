@@ -1,6 +1,6 @@
-# urssi-pixi-demo
+# URSSI summer school `pixi` demo
 
-`pixi` demo given as part of the [July 2024 US Research Software Sustainability Institute (URSSI) Summer School on Research Software and Open Science](https://github.com/si2-urssi/summerschool-July2024).
+[`pixi`](https://pixi.sh/) demo given as part of the [July 2024 US Research Software Sustainability Institute (URSSI) Summer School on Research Software and Open Science](https://github.com/si2-urssi/summerschool-July2024).
 
 ## Setup
 
